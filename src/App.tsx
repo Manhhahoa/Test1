@@ -40,6 +40,7 @@ function App() {
           domimg.remove();
          }     
         checkDelete = true;
+        console.log(e)
         img.style.position = 'absolute';
         img.style.top = `${e.clientY}px`
         img.style.left = `${e.clientX}px`    
@@ -58,14 +59,12 @@ function App() {
           const checkNewImg = (start : number, data : string[], drop : number, Moredata : string[], out : number, Dataout : string[]) => {
             if(src === data[start] && e.target.src === Moredata[drop]|| src === Moredata[drop] && e.target.src === data[start]){   
               src = Dataout[out];
-             
-              let img = document.createElement('img');
-              
+              let img = document.createElement('img');              
               if(!Data.includes(Dataout[out],0)){
                 Data.push(Dataout[out])
-                  setdata(Data)
-                  right?.appendChild(img)
-            }
+                    setdata(Data)
+                    right?.appendChild(img)
+              }
               if(src){
                img.src = src;
               }
