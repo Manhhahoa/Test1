@@ -1,0 +1,33 @@
+.main{
+  display: flex;
+  min-height: 800px;
+  .left{
+    width: 80%;
+    position: relative;
+    background-image: url('https://littlealchemy.com/img/workspace-background.png');
+    img {
+      width: 80px;
+      margin-left: 30px;
+      margin-top: 20px;
+      position: absolute;
+      top: 300px;
+     }
+  }
+  .right{
+    display: flex;
+    width: 20%;
+    flex-direction: column; 
+    margin-left: 10px;
+    background-image: url('https://littlealchemy.com/img/library-background.png');
+    img {
+      position: unset ;
+     width: 80px;
+     margin-left: 30px;
+     margin-top: 20px;
+    }
+
+  }
+}
+.absolute {
+  position: absolute;
+}
