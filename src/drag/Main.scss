@@ -1,0 +1,43 @@
+.Main{
+    display: flex;
+    .Board {
+        width: 80%;
+        background-image: url('https://littlealchemy.com/img/workspace-background.png');
+    }
+    .Picture {
+        width : 20%;
+      
+        background-image: url('https://littlealchemy.com/img/library-background.png');
+        div {
+            display: flex;
+            margin-left: 60px;
+            margin-top: 20px;
+            p{
+                margin: 0px;
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+            }
+        }
+    }
+    .alphabet {
+        text-align: center;
+        background-image: url('https://littlealchemy.com/img/library-background.png');
+        width: 30px;
+        border-right: 1px solid #fffcfc;
+        ul{
+            padding: 0px;
+            list-style-type: none;
+            li{
+                font-size: 18px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .Board {
+        position: relative;
+        .imgLeft{
+           position: absolute;
+        }
+    }
+}
